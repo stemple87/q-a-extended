@@ -8,9 +8,4 @@ All Questions:
 {{new-question save2="save3"}}
 
 <br>
-All Answers:
-<ul>
-  {{#each model.answers as |answer|}}
-    <li>{{#link-to 'answer' answer.id}}{{answer.text}}{{/link-to}}</li>
-  {{/each}}
-</ul>
+{{display-favorites}}

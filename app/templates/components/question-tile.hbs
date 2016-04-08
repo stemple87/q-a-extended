@@ -2,4 +2,5 @@
   {{#link-to 'question' question.id}}
   Question: {{question.body}} - Author: {{question.author}}
   {{/link-to}}
+  <button {{action 'addToFavorite' question}}>Add to Favorites</button>
 </li>

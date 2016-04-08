@@ -11,14 +11,14 @@ export default Ember.Route.extend({
           question.set(key,params[key]);
         }
       });
-      console.log(question)
+      // console.log(question);
       question.save();
       this.transitionTo('index');
     },
 
     destroyQuestion(question){
       if(confirm('Delete this question?')){
-        var answer_deletions = question.get('answer').map(function(answer){
+        var answer_deletions = question.get('answers').map(function(answer){
           return answer.destroyRecord();
         });
         Ember.RSVP.all(answer_deletions).then(function(){
