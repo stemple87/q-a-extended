@@ -1,3 +1,7 @@
-{{#each favoriteQuestion.items as |favorite|}}
-  {{favorite.body}} -- {{favorite.author}}
-{{/each}}
+<p>Favorite Questions:</p>
+
+<ul>
+  {{#each favoriteQuestion.items as |item|}}
+    <li>{{item.body}} -- {{item.author}}</li>
+  {{/each}}
+</ul>
