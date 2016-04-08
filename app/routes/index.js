@@ -8,6 +8,9 @@ export default Ember.Route.extend({
     });
   },
 
+  sortById: ['id:desc'],
+  sortedQuestions: Ember.computed.sort('model.questions', 'sortById'),
+
   actions: {
     save3(params) {
       var newQuestion = this.store.createRecord('question', params);

@@ -2,10 +2,12 @@ All Questions:
 <ul>
   {{#each model.questions as |question|}}
     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+
   {{/each}}
 </ul>
 <br>
 {{new-question save2="save3"}}
 
 <br>
+<hr />
 {{display-favorites}}

@@ -1,9 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  sortBy: ['id:asc'],
+  sortedQuestions: Ember.computed.sort('model.questions', 'sortById'),
+
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
+
   actions: {
     update(question, params) {
       Object.keys(params).forEach(function(key) {
