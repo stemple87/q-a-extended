@@ -1,12 +1,12 @@
 # Q&A MESSAGE BOARD
 
-#### _Ask Questions, Get Answers! 4/1/16_
+#### _Ask Questions, Get Answers! 4/8/16_
 
 #### _**By Simon Temple**_
 
 ## Description
 
-_This is an app that allows users to ask questions, and recieve answers by other users. Any user is able to update, delete, and edit questions. Any user may also answer any questions._
+_This is an extended version of an app that allows users to ask questions, and recieve answers by other users. Any user is able to update, delete, and edit questions. Any user may also answer any questions Additional features include ordering questions by post id, adding questions to favorites, and adding timestamps to heach question._
 
 ## Known Bugs
 
