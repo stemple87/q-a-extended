@@ -6,3 +6,13 @@ Notes: {{question.notes}}
 Posted: {{question.timestamp}}
 <br>
 <button {{action 'delete' question}}>Delete</button>
+
+<br>
+<h3>All answers</h3>
+
+{{#each sortedAnswers as |answer|}}
+  <li>Answer: {{answer.text}} </li>
+  <li>Author: {{answer.author}} </li>
+
+  <br>
+{{/each}}

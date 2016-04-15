@@ -3,14 +3,6 @@
 
 {{update-question question=model update="update" destroyQuestion="destroyQuestion"}}
 
-<br>
-<h3>All answers</h3>
 
-{{#each model.answers as |answer|}}
-  <li>Answer: {{answer.text}} </li>
-  <li>Author: {{answer.author}} </li>
-
-  <br>
-{{/each}}
 
 {{new-answer question=model answer=answer saveAnswer2="saveAnswer3"}}
